@@ -1,0 +1,63 @@
+@import "../../styles";
+
+.settings-content {
+  display: grid;
+  grid-template-rows: 0.25fr 0.5fr 2fr 1fr;
+  height: 100%;
+  width: 100%;
+  gap: 20px;
+}
+
+.nav-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .titles {
+    text-align: right;
+
+    h1 {
+      font-size: 16pt;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 14pt;
+      margin: 0;
+    }
+  }
+}
+
+.settings-title {
+  color: $primary-color;
+  font-size: 24pt;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.settings-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .setting {
+    display: flex;
+    flex-direction: column;
+
+    .setting-title {
+      font-size: 16pt;
+    }
+
+    a:link, a:visited {
+      color: $accent-color;
+      text-decoration: none;
+    }
+  }
+}
+
+.action-buttons {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}

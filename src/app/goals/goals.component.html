@@ -1,0 +1,28 @@
+<div class="goals-content">
+  <div class="nav-top">
+    <a routerLink="/dashboard">
+      <img src="assets/icons/arrow.svg" alt="back">
+    </a>
+    <div class="titles">
+      <h1>StepPro</h1>
+      <h2>Walk for a healthy future</h2>
+    </div>
+  </div>
+
+  <div class="goals-title">
+    <span>Your Goals</span>
+  </div>
+
+  <div class="goals-wrapper">
+    <app-goal *ngFor="let goal of goals"
+              [title]="goal.title"
+              [progress]="goal.progress"
+              (goalEdited)="onGoalEdited(goal, $event)"
+              (goalDeleted)="onGoalDeleted(goal)"
+    ></app-goal>
+  </div>
+
+  <div class="action-buttons">
+    <button (click)="createGoal()">CREATE GOAL</button>
+  </div>
+</div>

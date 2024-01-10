@@ -1,0 +1,19 @@
+<div class="rewards-content">
+    <div class="nav-top">
+        <a routerLink="/dashboard">
+            <img src="assets/icons/arrow.svg" alt="back">
+        </a>
+        <div class="titles">
+            <h1>StepPro</h1>
+            <h2>Walk for a healthy future</h2>
+        </div>
+    </div>
+
+    <div class="rewards-title">
+        <span>Your Rewards</span>
+    </div>
+
+    <div class="rewards-wrapper">
+        <app-reward *ngFor="let reward of rewards" [title]="reward.title" [imgSrc]="reward.imgSrc"></app-reward>
+    </div>
+</div>

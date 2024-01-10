@@ -1,0 +1,21 @@
+<div class="signup-content">
+  <div class="titles">
+    <h1>StepPro</h1>
+    <h2>Walk for a healthy future</h2>
+  </div>
+
+  <div>
+    <input class="user-data" type="text" id="firstname" name="firstname" placeholder="Firstname" [(ngModel)]="firstName">
+    <input class="user-data" type="text" id="lastname" name="lastname" placeholder="Lastname" [(ngModel)]="lastName">
+    <input type="text" id="username" name="username" placeholder="Username" [(ngModel)]="email">
+    <input type="password" id="password" name="password" placeholder="Password" [(ngModel)]="password">
+  </div>
+
+  <div class="signup-action">
+    <button (click)="createAccount()" [disabled]="isCreateDisabled()">CREATE ACCOUNT</button>
+  </div>
+
+  <div class="signup-extra-actions">
+    <span>You have an account?</span> <a routerLink="/login">Login here</a>
+  </div>
+</div>

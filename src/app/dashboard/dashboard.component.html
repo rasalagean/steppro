@@ -1,0 +1,38 @@
+<div class="dashboard-content">
+    <div class="nav-top">
+        <div class="titles">
+            <h1>StepPro</h1>
+            <h2>Walk for a healthy future</h2>
+        </div>
+        <a routerLink="/settings">
+            <img src="assets/icons/settings.svg" alt="settings">
+        </a>
+    </div>
+
+    <div class="welcome-text">
+        <span>Hello,</span>
+        <br>
+        <span>{{userName}}</span>
+    </div>
+
+    <div class="statistics-wrapper">
+        <div class="statistic">
+            <img src="assets/icons/running.svg" alt="running">
+            <span class="statistic-title">Today’s walked distance</span>
+            <span class="statistic-value">{{distance | number : '1.2-2'}} KM</span>
+        </div>
+        <div class="statistic">
+            <span class="statistic-title">Total steps</span>
+            <span class="statistic-value">{{steps | number : '1.0-0'}}</span>
+        </div>
+        <div class="statistic">
+            <span class="statistic-title">Saved CO2</span>
+            <span class="statistic-value">{{savedCo2 | number : '1.2-2'}} KG</span>
+        </div>
+    </div>
+
+    <div class="action-buttons">
+        <button (click)="openGoals()">GOALS</button>
+        <button (click)="openRewards()">REWARDS</button>
+    </div>
+</div>

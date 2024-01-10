@@ -1,0 +1,26 @@
+<div class="login-content">
+  <div class="titles">
+    <h1>StepPro</h1>
+    <h2>Walk for a healthy future</h2>
+  </div>
+
+  <div>
+    <input type="text" id="username" name="username" placeholder="Username" [(ngModel)]="email">
+    <input type="password" id="password" name="password" placeholder="Password" [(ngModel)]="password">
+    <label class="checkbox-container">Keep me logged in.
+      <input type="checkbox" checked="checked">
+      <span class="checkmark"></span>
+    </label>
+  </div>
+
+  <div class="login-action">
+    <button (click)="login()" [disabled]="isLoginDisabled()">LOGIN</button>
+    <div class="login-extra-actions">
+      <span>Forgot password?</span> <a href="#">Recover here</a>
+    </div>
+  </div>
+
+  <div class="login-extra-actions">
+    <span>Don't have an account?</span> <a routerLink="/signup">Signup here</a>
+  </div>
+</div>

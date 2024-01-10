@@ -1,0 +1,39 @@
+@import "../../styles";
+
+.login-content {
+  display: grid;
+  grid-template-rows: 2fr 2fr 1fr 1fr;
+  height: 100%;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+}
+
+.titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.login-action {
+  width: 100%;
+  text-align: center;
+
+  button {
+    margin-bottom: 20px;
+  }
+}
+
+.login-extra-actions {
+  a {
+    margin-left: 5px;
+  }
+
+  a:link, a:visited {
+    color: $accent-color;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+}

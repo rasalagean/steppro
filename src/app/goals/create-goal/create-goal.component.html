@@ -1,0 +1,28 @@
+<div class="goals-content">
+    <div class="nav-top">
+        <a routerLink="/goals">
+            <img src="assets/icons/arrow.svg" alt="back">
+        </a>
+        <div class="titles">
+            <h1>StepPro</h1>
+            <h2>Walk for a healthy future</h2>
+        </div>
+    </div>
+
+    <div class="goals-title">
+        <span>Create new goal</span>
+    </div>
+
+    <div class="goals-wrapper">
+        <input type="text" id="title" name="title" placeholder="Goal Title" [(ngModel)]="goalTitle">
+
+        <div class="progress-wrapper">
+            <label for="progress">Goal Progress</label>
+            <input type="range" id="progress" name="progress" min="0" max="100" step="1" [(ngModel)]="goalProgress">
+        </div>
+    </div>
+
+    <div class="action-buttons">
+        <button (click)="createGoal()">CREATE</button>
+    </div>
+</div>

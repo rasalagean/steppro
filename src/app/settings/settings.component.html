@@ -1,0 +1,36 @@
+<div class="settings-content">
+    <div class="nav-top">
+        <a routerLink="/dashboard">
+            <img src="assets/icons/arrow.svg" alt="back">
+        </a>
+        <div class="titles">
+            <h1>StepPro</h1>
+            <h2>Walk for a healthy future</h2>
+        </div>
+    </div>
+
+    <div class="settings-title">
+        <span>Your Account</span>
+    </div>
+
+    <div class="settings-wrapper">
+        <div class="setting">
+            <span class="setting-title">Name</span>
+            <span>{{accountName}}</span>
+        </div>
+        <div class="setting">
+            <span class="setting-title">Email</span>
+            <span>{{accountEmail}}</span>
+        </div>
+        <div class="setting">
+            <span class="setting-title">Password</span>
+            <a routerLink="/password-reset">Request password change</a>
+        </div>
+    </div>
+
+    <div class="action-buttons">
+        <button (click)="goToEditPage()">EDIT ACCOUNT</button>
+        <button (click)="deleteAccount()">DELETE ACCOUNT</button>
+        <button (click)="logout()">LOGOUT</button>
+    </div>
+</div>

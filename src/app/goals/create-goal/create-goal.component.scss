@@ -1,0 +1,67 @@
+@import "../../../styles";
+
+.goals-content {
+  display: grid;
+  grid-template-rows: 0.25fr 0.5fr 2fr 1fr;
+  height: 100%;
+  width: 100%;
+  gap: 20px;
+}
+
+.nav-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .titles {
+    text-align: right;
+
+    h1 {
+      font-size: 16pt;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 14pt;
+      margin: 0;
+    }
+  }
+}
+
+.goals-title {
+  color: $primary-color;
+  font-size: 24pt;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.goals-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.action-buttons {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+input[type=text] {
+  width: 80%;
+  height: 42px;
+  margin: 0;
+  background-image: none;
+  background-position: 0px 0px;
+}
+
+.progress-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    font-size: 14pt;
+    font-weight: bold;
+  }
+}

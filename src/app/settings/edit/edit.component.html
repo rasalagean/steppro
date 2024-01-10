@@ -1,0 +1,30 @@
+<div class="settings-content">
+    <div class="nav-top">
+        <a routerLink="/settings">
+            <img src="assets/icons/arrow.svg" alt="back">
+        </a>
+        <div class="titles">
+            <h1>StepPro</h1>
+            <h2>Walk for a healthy future</h2>
+        </div>
+    </div>
+
+    <div class="settings-title">
+        <span>Edit Account</span>
+    </div>
+
+    <div class="settings-wrapper">
+        <div class="setting">
+            <span class="setting-title">Name</span>
+            <input type="text" [(ngModel)]="newName">
+        </div>
+        <div class="setting">
+            <span class="setting-title">Email</span>
+            <input type="text" [(ngModel)]="newEmail">
+        </div>
+    </div>
+
+    <div class="action-buttons">
+        <button (click)="save()">SAVE CHANGES</button>
+    </div>
+</div>
